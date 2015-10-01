@@ -1,1 +1,6 @@
-../.jscsrc
+{
+  "preset": "airbnb",
+  "esprima": "esprima-fb",
+  "esnext": true,
+  "fileExtensions": [".js", ".jsx"]
+}
