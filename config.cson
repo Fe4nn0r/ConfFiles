@@ -1,0 +1,36 @@
+#Atom conf file
+"*":
+  welcome:
+    showOnStartup: false
+  minimap:
+    plugins:
+      "highlight-selected": true
+  core:
+    themes: [
+      "seti-ui"
+      "monokai-seti"
+    ]
+    disabledPackages: [
+      "linter-phpmd"
+    ]
+  editor:
+    invisibles: {}
+"linter-php":
+  executablePath: "/usr/bin/php"
+"linter-phpmd":
+  rulesets: "cleancode,codesize,controversial,design,naming,unusedcode"
+"linter-phpcs":
+  executablePath: "/usr/bin/phpcs"
+  codeStandardOrConfigFile: "PSR2"
+  warningSeverity: 0
+  tabWidth: 4
+  ignore: "*.blade.php,*.twig.php"
+"linter-js-yaml":
+  customTags: [
+    "!yaml"
+    "!include"
+  ]
+"linter-jshint":
+  executablePath: "/usr/local/bin/jshint"
+  lintInlineJavaScript: true
+  disableWhenNoJshintrcFileInPath: false
